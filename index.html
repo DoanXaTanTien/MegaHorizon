@@ -17,101 +17,99 @@
                     <li><a href="#home">Trang Chủ</a></li>
                     <li><a href="#about">Thông Tin</a></li>
                     <li><a href="#services">Truyền Thông</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div id="gallerywrapper">
-        <div id="gallery">
-            <div id="pic1">
-                <p> <p> </p> </p>
-                <h2 id="home">TUỔI TRẺ SỐNG XANH</h2>
-                <img src="images/1.png" height="650" width="450" alt="Image 1">
-                <a class="previous" href="#pic5">&lt;</a>
-                <a class="next" href="#pic2">&gt;</a>
-                <h3>Image 1</h3>
-            </div>
-            <div id="pic2">
-                <img src="images/2.png" height="650" width="450" alt="Image 2">
-                <a class="previous" href="#pic1">&lt;</a>
-                <a class="next" href="#pic3">&gt;</a>
-                <h3>Image 2</h3>
-            </div>
-            <div id="pic3">
-                <img src="images/3.png" height="650" width="450" alt="Image 3">
-                <a class="previous" href="#pic2">&lt;</a>
-                <a class="next" href="#pic4">&gt;</a>
-                <h3>Image 3</h3>
-            </div>
-            <div id="pic4">
-                <img src="images/4.png" height="650" width="450" alt="Image 4">
-                <a class="previous" href="#pic3">&lt;</a>
-                <a class="next" href="#pic5">&gt;</a>
-                <h3>Image 4</h3>
-            </div> 
-        </div> 
-    </div> <hr>
-    <br><br>
+        
+        <div id="slideshow">
+            <h2 id="home">TUỔI TRẺ SỐNG XANH</h2>
+            <img id="slide" src="images/1.png" alt="Slideshow Image">
+            <button id="prevButton">&#10094;</button>
+            <button id="nextButton">&#10095;</button>
+            <h3 id="slideTitle"></h3>
+        </div>
+        <hr>
+        <br><br>
 
         <section id="about" class="section">
             <div class="container">
                 <h2>7 NGUYÊN TẮC BẢO VỆ MÔI TRƯỜNG</h2>  
                 <img src="https://mtcs.1cdn.vn/2022/04/17/media.moitruong.net.vn-2022-04-_7-scaled.jpg" alt="Nguyên Tắc Bảo Vệ Môi Trường">             
-            </div> <hr>
+            </div>
+            <hr>
         </section>
 
         <section id="services" class="section">
-    <div class="container">
-        <h2>TUYÊN TRUYỀN BẢO VỆ MÔI TRƯỜNG</h2>
+            <div class="container">
+                <h2>TUYÊN TRUYỀN BẢO VỆ MÔI TRƯỜNG</h2>
 
-        <br> <h4>PHÂN LOẠI RÁC TẠI NGUỒN</h4>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fYRzg6nYLEc&t=3s" title="Video1" frameborder="0" allowfullscreen></iframe>
-        </div>
+                <br>
+                <h4>PHÂN LOẠI RÁC TẠI NGUỒN</h4>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fYRzg6nYLEc" title="Video1" frameborder="0" allowfullscreen></iframe>
+                </div>
 
-        <br> <h4>SỐNG XANH NHƯ THẾ NÀO</h4>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5BfmyFHof54" title="Video2" frameborder="0" allowfullscreen></iframe>
-        </div>
+                <br>
+                <h4>SỐNG XANH NHƯ THẾ NÀO</h4>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5BfmyFHof54" title="Video2" frameborder="0" allowfullscreen></iframe>
+                </div>
 
-        <br> <h4>VÌ THIÊN NHIÊN, VÌ CHÍNH CHÚNG TA</h4>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZLa13KBcl4" title="Video3" frameborder="0" allowfullscreen></iframe>
-        </div>
+                <br>
+                <h4>VÌ THIÊN NHIÊN, VÌ CHÍNH CHÚNG TA</h4>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZLa13KBcl4" title="Video3" frameborder="0" allowfullscreen></iframe>
+                </div>
 
-        <br> <h4>KHÔNG GIAN VUI CHƠI</h4>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ph9SGuHyukU" title="Video4" frameborder="0" allowfullscreen></iframe>
-        </div>
+                <br>
+                <h4>KHÔNG GIAN VUI CHƠI</h4>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ph9SGuHyukU" title="Video4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Liên Hệ Chúng Tôi</h2>
+                <form id="contactForm">
+                    <label for="name">Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="message">Tin nhắn:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Gửi</button>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+        </section>
         
-    </div>
-    <hr>
-</section>
-
+        
     </main>
 
     <footer>
         <div class="container">
             <p>Website được xây dựng và thiết kế bởi Xã Tân Tiến - TP. Bắc Giang</p>
             <h4 style="text-align: center; font-size: 12pt; vertical-align: baseline; color: black;">ĐOÀN THANH NIÊN CỘNG SẢN HỒ CHÍ MINH XÃ TÂN TIẾN - THÀNH PHỐ BẮC GIANG </h4>
-            <!-- <p dir="ltr" class="zfr3Q CDt4Ke" style="line-height: 1.38; text-align: center;">
-            <span class="C9DxTc" style="font-family: Arvo, Arial; font-size: 14pt; font-weight: 800; vertical-align: baseline;">
-            ĐOÀN TNCS HỒ CHÍ MINH THÀNH PHỐ BẮC GIANG
-            </span></p> <br> -->
             <small dir="ltr" class="zfr3Q TMjjoe CDt4Ke" style="display: block; line-height: 1.38; text-align: center;">
-            <span class="C9DxTc" style="font-family: Arvo, Arial; font-weight: 700;">
-            Thông tin chi tiết liên hệ:
-            </span> </small>
+                <span class="C9DxTc" style="font-family: Arvo, Arial; font-weight: 700;">
+                Thông tin chi tiết liên hệ:
+                </span>
+            </small>
             <small dir="ltr" class="zfr3Q TMjjoe CDt4Ke" style="display: block; line-height: 1.38; text-align: center;">
-            <span class="C9DxTc" style="font-family: Arvo, Arial; font-weight: 700;">
-            🔔 Fanpage: <a href="https://www.facebook.com/doanxatantien/" target="_blank">https://www.facebook.com/doanxatantien/</a>
-            </span> </small>
+                <span class="C9DxTc" style="font-family: Arvo, Arial; font-weight: 700;">
+                🔔 Fanpage: <a href="https://www.facebook.com/doanxatantien/" target="_blank">https://www.facebook.com/doanxatantien/</a>
+                </span>
+            </small>
             <small dir="ltr" class="zfr3Q TMjjoe CDt4Ke" style="display: block; line-height: 1.38; text-align: center;">
-            <span class="C9DxTc" style="font-family: Arvo, Arial; font-weight: 700;">
-            📍 Địa chỉ: Xã Tân Tiến - TP. Bắc Giang - Tỉnh Bắc Giang
-            </span> </small> <br>
+                <span class="C9DxTc" style="font-family: Arvo, Arial; font-weight: 700;">
+                📍 Địa chỉ: Xã Tân Tiến - TP. Bắc Giang - Tỉnh Bắc Giang
+                </span>
+            </small>
         </div>
     </footer>
 
