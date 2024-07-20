@@ -1,0 +1,247 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    background-image: url('https://th.bing.com/th/id/R.def7a2c7ea7637b92ba284f5c900ec04?rik=pwKjcxHzS0YdTQ&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+h2
+{
+    text-align: center;
+    color: mediumblue;
+}
+
+h4 {
+    text-align: center;
+    color: blueviolet;
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #4CAF50; 
+    margin: 20px 0; 
+}
+
+header .logo {
+    width: 50px; 
+    margin-bottom: 10px; 
+}
+
+header h3
+{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:nth-child(1), 
+nav ul li a:nth-child(2) {
+    color: white;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/998/394/original/blue-abstract-background-blue-background-design-abstract-futuristic-background-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Optional: Add spacing between videos */
+}
+
+ #gallerywrapper {
+    width: 640px;
+    height: 770px;
+    margin: 0 auto;
+    position: relative;
+    font-family: Verdana, Arial, sans-serif;
+    overflow: hidden; /* Ensures no overflow outside the container */
+}
+
+#gallery {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; /* Adjusts the width to fit the wrapper */
+    height: 100%; /* Adjusts the height to fit the wrapper */
+    text-align: center;
+}
+
+#gallery div {
+    width: 100%; /* Adjusts the width to fit the gallery */
+    height: 100%; /* Adjusts the height to fit the gallery */
+    padding: 0; /* Remove padding for a tighter fit */
+    box-sizing: border-box; /* Ensures padding does not affect the width/height */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery div img {
+    max-width: 100%; /* Ensures images fit within the gallery */
+    max-height: 90%; /* Ensures images do not exceed the height of the container */
+    object-fit: contain; /* Maintains the aspect ratio of images */
+    border: 0;
+}
+
+#gallery div h3 {
+    margin: 10px 0 0; /* Margin adjusted to align with image */
+    font-size: 18px;
+    color: #333; /* Text color for better visibility */
+}
+
+#gallery div p {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666; /* Text color for better visibility */
+}
+
+#gallery .previous, 
+#gallery .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px; /* Increased size for better visibility */
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better contrast */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#gallery .previous:hover, 
+#gallery .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+#gallery .previous {
+    left: 10px;
+}
+
+#gallery .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    #gallerywrapper {
+        width: 100%;
+        height: auto; /* Adjust height as needed for smaller screens */
+    }
+
+    #gallery div {
+        padding: 0; /* Adjust padding for smaller screens */
+    }
+
+    #gallery .previous, 
+    #gallery .next {
+        font-size: 20px; /* Slightly smaller navigation buttons for smaller screens */
+        padding: 8px;
+    }
+}
