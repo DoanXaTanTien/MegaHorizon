@@ -245,3 +245,21 @@ footer {
         padding: 8px;
     }
 }
+
+@media (max-width: 768px) {
+    #gallerywrapper {
+        width: 100%;
+        height: auto; /* Điều chỉnh chiều cao cho màn hình nhỏ hơn */
+        overflow: visible; /* Đảm bảo không có phần tử nào bị ẩn */
+    }
+
+    #gallery div {
+        padding: 0; /* Điều chỉnh padding cho màn hình nhỏ hơn */
+    }
+
+    #gallery .previous, 
+    #gallery .next {
+        font-size: 20px; /* Điều chỉnh kích thước nút điều hướng cho màn hình nhỏ hơn */
+        padding: 8px;
+    }
+}
