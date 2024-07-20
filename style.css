@@ -1,3 +1,4 @@
+/* Đặt nền, văn bản và định dạng cho header */
 header {
     background-color: #333;
     color: white;
@@ -7,7 +8,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
     display: flex;
     align-items: center;
 }
@@ -50,7 +50,6 @@ nav ul li a {
 nav ul li a:nth-child(1), 
 nav ul li a:nth-child(2) {
     color: white;
-    font-size: 25px;
 }
 
 nav ul li a:hover {
@@ -311,4 +310,41 @@ button[type="submit"]:hover {
     footer {
         height: 100%;
     }
+    header h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+    color: white;
+}
+h2, h3, h4 {
+    text-align: center; 
+    color: #0000FF; 
+    font-size: 100%;
+}
+nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        text-align: center;
+    }
+nav ul li {
+        flex: 1; 
+        margin: 0;
+    }
+nav ul li a {
+        color: white;
+        font-size: 3vw; 
+        text-decoration: none;
+        display: block; 
+        padding: 10px 0;
+        white-space: nowrap; 
+    }
+nav ul li a:nth-child(1), 
+nav ul li a:nth-child(2) {
+    color: white;
+    font-size: 15px;
+}
 }
