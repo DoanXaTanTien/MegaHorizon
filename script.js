@@ -1,35 +1,49 @@
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
+document.addEventListener("DOMContentLoaded", function() {
+    // Handle form submission
+    const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
 
-    formMessage.innerHTML = `<p>Cảm ơn, ${name}. Chúng tôi đã nhận được tin nhắn của bạn.</p>`;
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
 
-    // Reset form
-    document.getElementById('contactForm').reset();
-});
+            formMessage.innerHTML = `<p>Cảm ơn, ${name}. Chúng tôi đã nhận được tin nhắn của bạn.</p>`;
 
-// Slideshow functionality
-let currentSlide = 0;
-
-
-function showImage(index) {
-    const slide = document.getElementById("slide");
-    slide.src = images[index];
-}
-
-function nextImage() {
-    currentSlide = (currentSlide + 1) % images.length;
-    showImage(currentSlide);
-}
-
-function previousImage() {
-    currentSlide = (currentSlide - 1 + images.length) % images.length;
-    showImage(currentSlide);
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-            showImage(currentSlide);
+            // Reset form
+            contactForm.reset();
         });
-</script>
+    }
+
+    // Slideshow functionality
+    const images = [
+        { src: "images/1.png"},
+        { src: "images/2.png"},
+        { src: "images/3.png" },
+        { src: "images/4.png" }
+    ];
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        const slide = document.getElementById('slide');
+        if (slide && slideTitle) {
+            slide.src = images[index].src;
+        }
+    }
+
+    function nextImage() {
+        currentSlide = (currentSlide + 1) % images.length;
+        showSlide(currentSlide);
+    }
+
+    function previousImage() {
+        currentSlide = (currentSlide - 1 + images.length) % images.length;
+        showSlide(currentSlide);
+    }
+
+    // Initial slide display
+    showSlide(currentSlide);
+
+    document.getElementById('prevButton').addEventListener('click', previousImage);
+    document.getElementById('nextButton').addEventListener('click', nextImage);
+});
