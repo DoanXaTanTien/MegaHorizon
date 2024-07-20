@@ -9,13 +9,20 @@ document.addEventListener("DOMContentLoaded", function() {
             const name = document.getElementById('name').value;
 
             formMessage.innerHTML = `<p>Cảm ơn, ${name}. Chúng tôi đã nhận được tin nhắn của bạn.</p>`;
+             
+            const phoneNumber = '0889364685'; 
+            const message = encodeURIComponent('Cảm ơn bạn đã liên hệ với chúng tôi.'); 
+            const zaloLink = `https://zalo.me/${phoneNumber}?text=${message}`;
 
-            // Reset form
+
+            window.location.href = zaloLink;
+
             contactForm.reset();
+                contactForm.reset();
         });
     }
 
-    // Slideshow functionality
+    
     const images = [
         { src: "images/1.png"},
         { src: "images/2.png"},
@@ -41,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showSlide(currentSlide);
     }
 
-    // Initial slide display
+   
     showSlide(currentSlide);
 
     document.getElementById('prevButton').addEventListener('click', previousImage);
