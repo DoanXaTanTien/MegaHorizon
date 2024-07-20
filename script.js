@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     
+     // Slideshow functionality
     const images = [
         { src: "images/1.png"},
         { src: "images/2.png"},
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showSlide(currentSlide);
     }
 
-   
+    // Initial slide display
     showSlide(currentSlide);
 
     document.getElementById('prevButton').addEventListener('click', previousImage);
