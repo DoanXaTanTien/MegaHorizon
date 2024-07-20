@@ -276,8 +276,8 @@ footer {
 
 
 #slide {
-    max-width: 750px;
-    max-height: 90%;
+    max-width: 370px;
+    max-height: 70%;
     object-fit: contain;
     border: 0;
 }
